@@ -1,0 +1,125 @@
+/* Classic Elegance Theme - Main Content */
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif; /* Elegant serif font */
+    
+}
+
+body {
+    background-color:#dcd7ca; /* Soft, elegant background */
+    
+    color: #333; /* Dark text for readability */
+}
+
+.main-content {
+    
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* Heading Styles */
+h1 {
+    color: #b8860b; /* Gold accent */
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+/* Services Grid Styles */
+.services-grid {
+    /* background-color: #f4f2ed; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Fixed 2-column layout */
+    gap: 1rem; /* Reduced gap between items */
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+    width: 100%; /* Full width of container */
+    max-width: 600px; /* Limit grid width for centered alignment */
+    justify-items: center; /* Center items horizontally in each grid cell */
+    align-items: center; /* Center items vertically in each grid cell */
+}
+
+.service-item {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Vertically center the content */
+    padding: 0.8rem; /* Reduced padding for smaller items */
+    background-color: white;
+    border: 2px solid #ddd; /* Soft border color */
+    border-radius: 10px; /* Reduced border radius for smaller, sharper corners */
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    font-family: 'Merriweather', serif;
+    width: 100%; /* Make items take full width available within grid */
+    max-width: 150px; /* Limit maximum width of each service item */
+    height: 120px; /* Explicit height to ensure it is less than width */
+    text-align: center;
+}
+
+/* Hover and Selected States for Service Items */
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #b8860b; /* Gold border on hover */
+}
+
+.service-item p {
+    color: #333;
+    font-size: 1.2rem; /* Increased font size for better readability */
+    font-weight: bold; /* Bold text for emphasis */
+    margin: 0; /* Remove default margin to prevent spacing issues */
+}
+
+.service-item.selected {
+    border-color: #b8860b; /* Gold border for selected item */
+}
+
+/* Navigation Buttons Styles */
+.navigation-buttons {
+    /* background-color: #f4f2ed; */
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Increased space between buttons */
+    margin-top: 2rem;
+    width: 100%; /* Full width of container */
+    max-width: 600px; /* Limit buttons' section width for centered alignment */
+}
+
+.nav-button {
+    padding: 0.6rem 1.5rem; /* Reduced padding */
+    border: 2px solid #b8860b; /* Gold border */
+    border-radius: 6px;
+    background-color: white;
+    color: #b8860b; /* Gold text */
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+}
+
+.nav-button:hover {
+    background-color: #b8860b; /* Gold background on hover */
+    color: white; /* White text on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .services-grid {
+        
+        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    }
+}

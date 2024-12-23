@@ -1,0 +1,177 @@
+/* Classic Elegance Theme - Product Page */
+
+/* Product Container */
+.product-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0; /* Increased margin for more breathing space */
+  font-family: 'Merriweather', serif; /* Elegant serif font */
+}
+
+/* Product Image Container */
+.product-image-container {
+  flex: 1;
+  margin-right: 3rem; /* More spacious layout */
+  text-align: center;
+}
+
+/* Product Image */
+.product-image {
+  max-width: 90%; /* Slightly reduced size for a more elegant display */
+  height: auto;
+  border-radius: 8px; /* Soft corners for a refined image */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for the image */
+}
+
+/* Product Details */
+.product-details {
+  flex: 1;
+  color: #555; /* Soft gray text for a sophisticated feel */
+}
+
+/* Product Title */
+.product-title {
+  font-size: 2.5rem; /* Larger font size for emphasis */
+  margin-bottom: 1rem;
+  color: #333; /* Darker color for the title */
+  font-weight: 700; /* Bold for importance */
+  line-height: 1.3;
+}
+
+/* Product Price and Rating Section */
+.product-price-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+/* Product Price */
+.product-price {
+  font-size: 1.75rem; /* Slightly larger font for price */
+  font-weight: bold;
+  color: #073d2a; /* Dark green for the price for a classy feel */
+}
+
+/* Product Rating */
+.product-rating {
+  display: flex;
+  align-items: center;
+}
+
+/* Star Icons */
+.star {
+  color: #ccc;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.star.active {
+  color: #ffd700; /* Gold color for active stars */
+}
+
+/* Rating Value */
+.rating-value {
+  margin-left: 0.5rem;
+  font-size: 1.2rem; /* Slightly larger font for rating */
+  color: #555; /* Softer gray for the rating text */
+}
+
+/* Product Actions Section */
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+/* Buttons */
+.btn-book-now,
+.btn-write-review,
+.btn-submit-review {
+  padding: 0.75rem 1.5rem; /* Generous padding for an elegant look */
+  font-size: 1.1rem; /* Slightly larger font for buttons */
+  border: none;
+  border-radius: 6px; /* Softer, more refined corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+/* Book Now Button */
+.btn-book-now {
+  background-color: #073d2a; /* Dark green for the primary button */
+  color: #fff;
+}
+
+.btn-book-now:hover {
+  background-color: #052a1d; /* Darker shade on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Write Review Button */
+.btn-write-review {
+  background-color: #6c757d; /* Soft gray for secondary actions */
+  color: #fff;
+}
+
+.btn-write-review:hover {
+  background-color: #5a6268; /* Darker gray on hover */
+  transform: translateY(-2px);
+}
+
+/* Submit Review Button */
+.btn-submit-review {
+  background-color: #28a745; /* Elegant green for positive actions */
+  color: #fff;
+}
+
+.btn-submit-review:hover {
+  background-color: #1e7e34; /* Darker green for hover */
+  transform: translateY(-2px);
+}
+
+/* Review Form Container */
+.review-form-container {
+  margin-top: 3rem; /* More space above the review form */
+  padding: 2rem;
+  border: 1px solid #ddd; /* Soft gray border */
+  border-radius: 8px; /* Softer corners */
+  background-color: #fafafa; /* Light background for the form */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Review Input */
+.review-input {
+  width: 100%;
+  height: 120px; /* Larger input for more comfortable review writing */
+  padding: 1rem;
+  font-size: 1.1rem; /* Slightly larger text for better readability */
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Softer corners */
+  resize: vertical;
+  color: #555;
+  background-color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-container {
+      flex-direction: column; /* Stacking the product image and details on small screens */
+      text-align: center; /* Center the text on smaller screens */
+  }
+
+  .product-image-container {
+      margin-right: 0; /* Remove right margin for small screens */
+      margin-bottom: 2rem; /* Add space between the image and details */
+  }
+
+  .product-details {
+      font-size: 18px; /* Slightly smaller text on small screens */
+  }
+
+  .btn-book-now,
+  .btn-write-review,
+  .btn-submit-review {
+      width: 100%; /* Full width buttons for mobile responsiveness */
+  }
+}

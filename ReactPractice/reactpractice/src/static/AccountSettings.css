@@ -1,0 +1,118 @@
+/* Classic Elegance Theme - Account Settings */
+
+.account-settings-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Merriweather', serif;
+  background-color: #fff8e1; /* Matching theme's background color */
+  color: #333;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #b8860b; /* Gold accent from the theme */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8); /* Subtle background for the form */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #8b6914; /* Subtle brown for label text */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff; /* Clean white background for inputs */
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #b8860b; /* Gold color on focus */
+  outline: none;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #b8860b; /* Gold button color */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #a67c00;
+}
+
+.btn-secondary {
+  background-color: #8b6914; /* Dark brown for secondary buttons */
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #705c08;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 1rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .form-container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}

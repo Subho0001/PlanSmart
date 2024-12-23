@@ -1,0 +1,149 @@
+/* Classic Elegance Theme - Birthday Combo Selection Page */
+
+/* Global Styles */
+.birthday-combo-container {
+  min-height: 50vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Merriweather', serif; /* Elegant serif font */
+  background-color: #f4f2ed; /* Soft light background */
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex: 1;
+  background-color: #fafafa; /* Slightly lighter background for the content area */
+  padding: 40px;
+}
+
+/* Selection Area */
+.selection-area {
+  flex: 1;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Selection Title */
+.selection-title {
+  color: #b8860b; /* Elegant gold color */
+  font-size: 32px;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-family: 'Merriweather', serif;
+}
+
+/* Selection Subtitle */
+.selection-subtitle {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 24px;
+  font-family: 'Merriweather', serif;
+}
+
+/* Service Selection Grid */
+.service-selection {
+  display: grid;
+  align-self: center;
+  width: 50%;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 grid layout */
+  gap: 20px; /* Decreased gap between items */
+  margin-bottom: 40px;
+}
+
+/* Service Card */
+.service-card {
+  background: white;
+  border: 2px solid #ddd; /* Soft border */
+  border-radius: 12px; /* More rounded corners for elegance */
+  padding: 30px; /* Decreased padding for smaller card size */
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px; /* Smaller font size for items */
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
+}
+
+/* Selected Service Card */
+.service-card.selected {
+  border-color: #b8860b; /* Elegant gold for selected state */
+  background-color: #fef7e5; /* Soft gold background */
+}
+
+/* Hover effect on Service Card */
+.service-card:hover {
+  border-color: #b8860b; /* Elegant gold on hover */
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+/* Back Button */
+.back-button,
+.next-button {
+  padding: 12px 30px; /* Reduced width for both buttons */
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-family: 'Merriweather', serif;
+}
+
+.back-button {
+  background-color: #dcdcdc; /* Subtle gray for back button */
+  color: #333;
+}
+
+.back-button:hover {
+  background-color: #c0c0c0; /* Darker gray on hover */
+}
+
+.next-button {
+  background-color: #b8860b; /* Elegant gold for next button */
+  color: white;
+  padding: 20px 50px; /* Increased padding for a larger button */
+  font-size: 18px; /* Increased font size */
+  border-radius: 8px;
+}
+
+.next-button:hover {
+  background-color: #9e7d08; /* Darker gold on hover */
+}
+
+.birthday-combo-container button{
+  width: 200px;
+  height:50px;
+  font-size: 20px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .main-content {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .service-selection {
+      grid-template-columns: 1fr; /* One item per row on smaller screens */
+  }
+
+  .selection-title {
+      font-size: 28px; /* Slightly smaller title on mobile */
+  }
+
+  .selection-subtitle {
+      font-size: 16px; /* Smaller subtitle for mobile */
+  }
+}

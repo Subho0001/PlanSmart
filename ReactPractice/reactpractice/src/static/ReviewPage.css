@@ -1,0 +1,94 @@
+/* Classic Elegance Theme - Review Form */
+
+/* Review Form Overlay */
+.review-form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly darker overlay for elegance */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Review Form */
+.review-form {
+  background: #fff; /* White background for the form */
+  padding: 2rem; /* Increased padding for a spacious feel */
+  width: 350px; /* Slightly wider form for better presentation */
+  border-radius: 10px; /* Softer corners for a refined look */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* More space between elements for a clean design */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+}
+
+/* Label Styling */
+.review-form label {
+  font-size: 16px; /* Larger font size for readability */
+  font-weight: 600; /* Semi-bold font for emphasis */
+  color: #333; /* Darker color for the label text */
+  margin-bottom: 5px; /* Small space below the label */
+}
+
+/* Textarea Styling */
+.review-form textarea {
+  resize: none;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #555; /* Soft gray text */
+  background-color: #fafafa; /* Light background color for comfort */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners for the input */
+  font-family: 'Merriweather', serif; /* Elegant serif font */
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+/* Button Styling */
+.review-form button {
+  padding: 12px 18px; /* Generous padding for a luxurious feel */
+  font-size: 1.1rem;
+  color: #fff; /* White text for contrast */
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 6px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Submit Button */
+.review-form button.submit-button {
+  background-color: #073d2a; /* Elegant dark green for the submit button */
+}
+
+.review-form button.submit-button:hover {
+  background-color: #052a1d; /* Darker green on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* Close Button */
+.review-form .close-button {
+  background-color: #6c757d; /* Soft gray for the close button */
+  color: #fff; /* White text */
+  text-align: center;
+}
+
+.review-form .close-button:hover {
+  background-color: #5a6268; /* Darker gray on hover */
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .review-form-container {
+      padding: 1rem; /* Smaller padding for the container on mobile */
+  }
+
+  .review-form {
+      width: 90%; /* Full-width form on small screens */
+      padding: 1.5rem; /* Reduced padding for a compact design */
+  }
+}

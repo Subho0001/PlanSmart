@@ -1,0 +1,62 @@
+/* Classic Elegance Theme - App Styles */
+
+/* App Container */
+.App {
+  text-align: center;
+  font-family: 'Georgia', serif; /* Elegant serif font */
+  color: #333; /* Dark text for classic elegance */
+}
+
+/* Logo Styling */
+.App-logo {
+  height: 80vmin; /* Increased size for better visual appeal */
+  
+  pointer-events: none;
+  border-radius: 50%; /* Rounded logo for a more elegant shape */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Logo Animation (with reduced motion consideration) */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+      animation: App-logo-spin infinite 30s linear; /* Slower, more graceful animation */
+  }
+}
+
+/* Header Styling */
+.App-header {
+  background-color: #f9f9f9; /* Light, soft background */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin); /* Slightly larger font for elegance */
+  color: #333; /* Dark text for readability and sophistication */
+  font-family: 'Georgia', serif; /* Classic serif font for header */
+  padding: 20px;
+}
+
+/* Link Styling */
+.App-link {
+  color: #6c757d; /* Muted gray color for links */
+  font-weight: bold; /* Bold to emphasize importance */
+  text-decoration: none; /* Clean, no underline */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Link Hover Effect */
+.App-link:hover {
+  color: #495057; /* Slightly darker gray on hover for subtle interaction */
+  text-decoration: underline; /* Underline on hover for classic elegance */
+}
+
+/* Keyframes for Logo Spin Animation */
+@keyframes App-logo-spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}

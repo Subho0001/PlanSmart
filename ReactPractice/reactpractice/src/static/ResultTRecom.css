@@ -1,0 +1,125 @@
+/* Classic Elegance Theme - Venue Details */
+
+/* Venue Details Container */
+.venue-details-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Merriweather', serif; /* Elegant serif font */
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem; /* Slightly increased padding for refinement */
+}
+
+/* Venue Info Box */
+.venue-info {
+  display: flex;
+  align-items: center;
+  gap: 3rem; /* Increased gap for a more spacious layout */
+  background-color: #ffffff; /* Clean white background */
+  border-radius: 12px; /* More rounded corners for a soft, elegant look */
+  padding: 3rem; /* Increased padding for a luxurious feel */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12); /* Softer, more subtle shadow */
+  max-width: 1200px; /* Limit width to create a balanced design */
+  margin: 0 auto;
+}
+
+/* Venue Image Container */
+.venue-image-container {
+  flex: 1;
+  text-align: center;
+}
+
+/* Venue Image */
+.venue-image {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px; /* Softer corners for a refined look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for image */
+}
+
+/* Venue Details */
+.venue-details-container {
+  flex: 1;
+  font-size: 16px;
+  color: #555; /* Softer gray text color */
+}
+
+/* Venue Name */
+.venue-name {
+  font-size: 2.5rem;
+  font-weight: 700; /* Bold for emphasis */
+  margin-bottom: 1.5rem;
+  color: #333; /* Darker text for the name */
+  line-height: 1.3;
+}
+
+/* Venue Details Item */
+.venue-details-item {
+  margin-bottom: 1.5rem; /* Increased space between items */
+}
+
+.venue-details-item strong {
+  display: block;
+  font-weight: 600; /* Slightly lighter boldness for clarity */
+  margin-bottom: 0.8rem;
+  color: #073d2a; /* Dark green for headings */
+}
+
+/* Button Styling */
+.btn {
+  padding: 0.75rem 1.5rem; /* More generous padding for buttons */
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px; /* Softer, more refined corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.btn-primary {
+  background-color: #073d2a; /* Dark green for primary buttons */
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12); /* Light shadow */
+}
+
+.btn-primary:hover {
+  background-color: #052a1d; /* Darker shade for hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.btn-secondary {
+  background-color: #6c757d; /* Soft gray for secondary buttons */
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268; /* Darker gray on hover */
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .venue-info {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .venue-image-container {
+      margin-bottom: 2rem; /* Extra space between image and text */
+  }
+
+  .venue-details-container {
+      font-size: 18px; /* Larger text for mobile readability */
+  }
+
+  .btn {
+      width: 100%; /* Full-width buttons for small screens */
+  }
+}

@@ -1,0 +1,164 @@
+/* Classic Elegance Theme */
+
+.wrapper {
+  font-family: 'Merriweather', serif;
+  background-image: url('/Users/sayali/ASDL/Project/react/plansmart/public/main_page.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-color: #fff8e1;
+  color: #333;
+  position: relative;
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 223, 186, 0.6); 
+  z-index: -1; 
+}
+
+.main {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-section {
+  color: #8b6914; 
+  font-family: 'Merriweather', 'Georgia', serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero-section h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #b8860b;
+  margin: 0.2em 0;
+}
+
+.hero-section p {
+  font-size: 1.5em;
+  margin-top: 10px;
+  color: #8b6914;
+  opacity: 0.8;
+}
+
+.services-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+}
+
+.service-icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.service-icon:hover {
+  transform: scale(1.1);
+}
+
+.service-box h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #8b6914;
+}
+
+.service-button {
+  background-color: #b8860b;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.service-button:hover {
+  background-color: #a67c00;
+}
+
+.help-button {
+  background-color: #8b6914;
+}
+
+
+
+.edit-address-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.edit-address-overlay .edit-address-component {
+  background: rgba(255, 255, 255, 0.8); 
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%; 
+  max-width: 500px;
+}
+.footer {
+  background-color: #b8860b;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2em;
+    color: #b8860b;
+  }
+
+  .hero-section p {
+    font-size: 1.2em;
+    color: #8b6914;
+  }
+
+  .service-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .service-button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .services-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .edit-address-overlay .edit-address-component {
+    width: 90%;
+    max-width: 400px;
+  }
+}

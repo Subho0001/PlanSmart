@@ -1,0 +1,158 @@
+/* Vendors.css - Classic Elegance Theme */
+
+/* Container for the main vendor selection page */
+.vendor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  font-family: 'Georgia', serif;
+  color: #3b3b3b;
+  background-color: #f4f2ed;
+}
+
+/* Title styling */
+.vendor-container h2 {
+  font-size: 28px;
+  color: #8c7a5f;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Vendor list container */
+.vendor-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Vendor card styling */
+.vendor-card {
+  background-color: #fff;
+  border: 1px solid #dcd7ca;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vendor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Vendor card header */
+.vendor-card h3 {
+  font-size: 22px;
+  color:#8c7a5f;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+/* Vendor card details */
+.vendor-card p {
+  font-size: 16px;
+  color: #6b6b6b;
+  margin: 8px 0;
+}
+
+/* Placeholder image for vendor */
+.vendor-image {
+  width: 100%;
+  height: 160px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 1px solid #dcd7ca;
+}
+
+/* Modal overlay styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal container */
+.modal-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border: 1px solid #dcd7ca;
+}
+
+/* Modal header */
+.modal-container h3 {
+  font-size: 24px;
+  color: #2d2d2d;
+  margin-bottom: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #dcd7ca;
+  padding-bottom: 10px;
+}
+
+/* Modal content */
+.modal-content {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Modal actions */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Buttons inside the modal */
+.modal-actions button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+  transition: background-color 0.3s ease;
+}
+
+.modal-actions .submit-button {
+  background-color: #8c7a5f;
+  color: white;
+  border: none;
+}
+
+.modal-actions .close-button {
+  background-color: #b23a48;
+  color: white;
+  border: none;
+}
+
+.modal-actions button:hover {
+  opacity: 0.9;
+}
+
+/* Loader styling */
+.loading-text {
+  font-size: 18px;
+  color: #6b6b6b; 
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Georgia', serif;
+}

@@ -1,0 +1,69 @@
+/* Navbar Styling */
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: flex-start; /* Changed from space-between */
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #faf9f6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  
+}
+a {
+  text-decoration: none; /* Removes the underline */
+}
+
+
+/* Profile Icon - Modified just this part */
+.profile-icon {
+  width: 70px;  /* Reduced from 50px */
+  height: 70px; /* Reduced from 50px */
+  cursor: pointer;
+  object-fit: contain; /* This ensures the image maintains its aspect ratio */
+}
+
+/* Logo and Text Container */
+.logo-button {
+  display: flex;
+  align-items: right;
+  gap: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding-left: 0; /* Ensures no extra padding on the left */
+}
+
+/* Navigation Items */
+.nav-items {
+  margin-left: auto; /* This pushes the nav items to the right */
+  font-size: 20px;
+}
+/* Logo and Text Container - Modified */
+
+/* Logo Image */
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+.logo-button img{
+  width: 100px;
+  height: 100px;
+}
+
+/* Logo Text */
+.logo-text {
+  font-size: 50px;
+  color: #8b6914;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Navigation Items - Modified */
+.nav-items {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-left: auto; /* This pushes the nav items to the right */
+  padding-right: 2rem;
+}

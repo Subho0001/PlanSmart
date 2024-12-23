@@ -1,0 +1,104 @@
+/* Classic Elegance Theme - My Orders Page */
+
+/* Container */
+.my-orders-container {
+  padding: 40px;
+  background-color: #f5f5f5; /* Soft light background for the section */
+  font-family: 'Merriweather', serif; /* Elegant serif font */
+}
+
+/* Orders Title */
+.my-orders-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4b4b4b; /* Slightly darker gray for title */
+  font-weight: bold;
+}
+
+/* Orders Table */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+/* Table Headers and Cells */
+.orders-table th,
+.orders-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0; /* Soft gray border */
+  text-align: left;
+  font-size: 16px;
+  font-family: 'Merriweather', serif;
+}
+
+/* Table Header Styling */
+.orders-table th {
+  background-color: #f0f7ff; /* Light blue background for elegance */
+  color: #4b4b4b;
+  font-weight: bold;
+}
+
+/* Table Rows Hover Effect */
+.orders-table tbody tr:hover {
+  background-color: #f9f9f9; /* Light hover effect */
+}
+
+/* Orders List Styling */
+.orders-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Order Card */
+.order-card {
+  background: #ffffff;
+  border: 1px solid #ddd; /* Soft gray border */
+  border-radius: 12px; /* Elegant rounded corners */
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  transition: all 0.2s ease;
+}
+
+/* Hover Effect for Order Card */
+.order-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Order Card Title */
+.order-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 0;
+  font-weight: bold;
+  font-family: 'Merriweather', serif;
+}
+
+/* Order Card List Items */
+.order-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Order Card List Item Styling */
+.order-card ul li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #555; /* Slightly lighter text for the list items */
+}
+
+/* Order Card Footer */
+.order-card .order-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Order Footer Text */
+.order-footer span {
+  font-weight: 500;
+  color: #4b4b4b;
+}
+

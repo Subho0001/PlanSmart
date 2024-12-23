@@ -1,0 +1,190 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif; /* Elegant serif font */
+}
+
+/* Event Selection Container */
+.event-selection-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f7f2; /* Light, warm background */
+}
+
+/* Main Content Area */
+.main-content {
+  display: flex;
+  flex: 1;
+  background-color: #f9f7f2; /* Soft background for the whole page */
+}
+
+/* Side Menu Styles */
+.side-menu {
+  width: 280px;
+  background-color: white;
+  padding: 24px;
+  border-right: 1px solid #e0e0e0; /* Subtle border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Soft shadow */
+}
+
+/* Menu Title */
+.menu-title {
+  color: #8b6914; /* Gold color for elegance */
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Menu Subtitle */
+.menu-subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+/* Menu Options */
+.menu-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Menu Option Styling */
+.menu-option {
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+/* Menu Option Hover & Selection Effects */
+.menu-option:hover {
+  background-color: #f0e68c; /* Light gold hover */
+  color: #8b6914; /* Darker gold text on hover */
+}
+.menu-option.selected {
+  background-color: #8b6914; /* Gold background for selected */
+  color: white;
+}
+
+/* Selection Area */
+.selection-area {
+  flex: 1;
+  padding: 32px;
+}
+
+/* Selection Title */
+.selection-title {
+  color: #8b6914; /* Elegant gold for the title */
+  font-size: 24px;
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+
+/* Categories Grid */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusting to fit the theme */
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+/* Category Card Styling */
+.category-card {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px; /* Elegant rounded corners */
+  padding: 24px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Category Card Hover & Selected State */
+.category-card:hover {
+  border-color: #8b6914; /* Gold border on hover */
+  transform: translateY(-2px); /* Slight lifting effect */
+}
+.category-card.selected {
+  border-color: #8b6914; /* Gold border */
+  background-color: #f0f7ff; /* Light gold background */
+}
+
+/* Category Icon */
+.category-icon {
+  font-size: 36px; /* Larger icon for elegance */
+  color: #8b6914; /* Gold icon */
+}
+
+/* Category Label */
+.category-label {
+  text-align: center;
+  font-size: 16px;
+  color: #333; /* Dark text for contrast */
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+/* Back and Next Buttons */
+.back-button,
+.next-button {
+  padding: 12px 32px;
+  border-radius: 8px; /* Rounded edges */
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+/* Back Button */
+.back-button {
+  background-color: #e0e0e0;
+  color: #333;
+}
+.back-button:hover {
+  background-color: #d0d0d0; /* Subtle darkening on hover */
+}
+
+/* Next Button */
+.next-button {
+  background-color: #8b6914; /* Gold background for next button */
+  color: white;
+}
+.next-button:hover:not(.disabled) {
+  background-color: #f0e68c; /* Light gold on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Disabled State for Next Button */
+.next-button.disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* Stack content vertically on small screens */
+  }
+
+  .side-menu {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust grid for small screens */
+  }
+}

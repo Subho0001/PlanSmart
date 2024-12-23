@@ -1,0 +1,133 @@
+/* Classic Elegance Theme - Edit Address Page */
+
+:root {
+    --primary-color: #b8860b; /* Gold accent */
+    --secondary-color: #8b6914; /* Dark brown accent */
+    --background-color: #fff8e1; /* Soft, elegant background */
+    --input-bg: #f5f5f5; /* Soft background for inputs */
+    --input-border: #ddd; /* Soft border for inputs */
+}
+
+.edit-address-page {
+    background-color: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for an elegant look */
+    flex-grow: 1;
+    font-family: 'Merriweather', serif; /* Elegant serif font */
+}
+
+.container button
+{
+    width: 250px;
+    height: 80px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem; /* Increased font size for better readability */
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: var(--secondary-color); /* Dark brown for labels */
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-box {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid var(--input-border);
+    box-sizing: border-box;
+    background-color: var(--input-bg);
+    color: var(--secondary-color);
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input-box::placeholder {
+    color: #999;
+}
+
+.input-box:focus {
+    border-color: var(--primary-color); /* Gold border when input is focused */
+    outline: none;
+}
+
+select.input-box {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: auto;
+    
+}
+
+.buttons button {
+   
+    padding: 12px 24px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cancel {
+    background-color: #d9d9d9;
+    color: black;
+}
+
+.submit {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.submit:hover {
+    background-color: #a67c00; /* Darker gold on hover */
+    transform: translateY(-2px); /* Subtle hover effect */
+}
+
+.cancel:hover {
+    background-color: #bfbfbf;
+    transform: translateY(-2px); /* Subtle hover effect */
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+}

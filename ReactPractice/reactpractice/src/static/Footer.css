@@ -1,0 +1,72 @@
+.footer {
+    background: #333;
+    
+    color: white;
+    padding: 0.5rem 0.5rem; /* Reduced padding for smaller footer */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem; /* Reduced gap between columns */
+}
+
+.footer-section h4 {
+    margin-bottom: 0.8rem; /* Reduced margin for headers */
+    color:#170b3c;
+    font-size: 1.4em; /* Slightly smaller font size */
+}
+
+.footer-section ul {
+    list-style: none;
+    
+}
+
+.footer-section li {
+    margin-bottom: 0.4rem; /* Reduced space between list items */
+    font-size: 1.4em; /* Smaller font size for list items */
+    color:  white;
+}
+
+.footer-section p {
+    text-align: center;  /* Center-aligns text */
+    font-size: 1.6em; /* Sets font size */
+    color: black;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.4rem; /* Reduced padding */
+    margin-bottom: 0.8rem; /* Reduced margin */
+    border: 0.8px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    min-height: 50px; /* Reduced minimum height */
+    resize: vertical;
+}
+
+.contact-form button {
+    background:  #fff8e1;
+    color: black;
+    border: none;
+    padding: 0.2rem 0.4rem; /* Reduced padding */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.2em; /* Smaller font size */
+    width: 120px; /* Adjusts width based on content or set a specific value like '200px' */
+    height: 40px; /* Adjusts the height of the button */
+}
+
+.contact-form button:hover {
+    background: #6e5310;
+    color:white;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr;
+        
+    }
+}

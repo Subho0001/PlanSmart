@@ -1,0 +1,114 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); /* Slightly darker for a more focused look */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease; /* Smooth fade-in effect */
+}
+
+/* Modal Content */
+.modal-content {
+  background: var(--background-color);
+  
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 700px; /* Increased width */
+  width: 90%; /* Adjusted for larger screens */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+/* .modal-content .checkbox-item label{
+  font-size: 30px;
+} */
+
+.modal-content:hover {
+  transform: scale(1.02);
+}
+
+/* Heading */
+h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: var(--primary-color); /* Gold accent color */
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 350px; /* Increased height for more options to be displayed */
+  overflow-y: auto;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Total Price */
+.total-price {
+  font-weight: bold;
+  font-size: 26px;
+  margin-top: 10px;
+  color: var(--secondary-color); /* Dark brown accent */
+  text-align:center; /* Aligning right for a polished look */
+}
+
+/* Text Area */
+.order-textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  resize: vertical;
+  font-family: 'Merriweather', serif;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+/* Button Styles with Classic Elegance Theme */
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 20px; /* Rounded for a softer appearance */
+  cursor: pointer;
+  background-color: var(--primary-color); /* Gold color */
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Soft button shadow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width:150px;
+  height:50px;
+  font-size:20px;
+}
+
+button:hover {
+  background-color: #a67c00; /* Slightly darker gold on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+button:active {
+  transform: scale(0.98); /* Subtle "press" effect on click */
+}

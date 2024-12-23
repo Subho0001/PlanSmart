@@ -1,0 +1,22 @@
+/* Classic Elegance Theme - Body and Code Styling */
+
+/* Body Styling */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif, 'Times New Roman', Times, serif; /* Classic serif fonts for elegance */
+  color: #333; /* Dark text for readability and sophistication */
+  background-color: #f4f4f4; /* Soft background color for a calm aesthetic */
+  -webkit-font-smoothing: antialiased; /* Smooth font rendering */
+  -moz-osx-font-smoothing: grayscale; /* Enhanced font smoothing for a refined appearance */
+  line-height: 1.6; /* Increased line-height for better readability */
+}
+
+/* Code Styling */
+code {
+  font-family: 'Courier New', Courier, monospace; /* A classic monospace font */
+  font-size: 1rem; /* Slightly larger font for clarity */
+  background-color: #f5f5f5; /* Light background for code */
+  padding: 0.2rem 0.4rem; /* Padding for better readability */
+  border-radius: 4px; /* Soft border radius for a subtle, polished look */
+  color: #333; /* Dark text for code to maintain consistency with body */
+}
